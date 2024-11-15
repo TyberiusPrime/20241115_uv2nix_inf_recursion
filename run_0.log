@@ -1,0 +1,88 @@
+warning: Git tree '/project/builds/hammer_build_grimoire-elk_1.1.5/build' is dirty
+trace: numpy matched to 1.21.6
+trace: no version match for pandas
+trace: scipy matched to 1.6.1
+trace: six matched to 1.16.0
+trace: python-dateutil matched to 2.9.0.post0
+trace: networkx matched to 2.2
+trace: pytz matched to 2024.1
+trace: dulwich matched to 0.20.50
+trace: django-treebeard matched to 4.2.0
+trace: no version match for mysqlclient
+trace: rq matched to 1.0
+trace: uwsgi matched to 2.0.26
+trace: pyyaml matched to 6.0
+trace: colored matched to 1.4.4
+trace: dill matched to 0.3.1.1
+trace: sgmllib3k matched to 1.0.0
+trace: promise matched to 2.3
+trace: markupsafe matched to 2.0.1
+trace: pycparser matched to 2.14
+trace: rx matched to 1.6.3
+these 7 derivations will be built:
+  /nix/store/033hiv7ixjw1xzp3z3acps1qn8g0qzpb-pandas-1.5.1.drv
+  /nix/store/dc3jllv0g90iv3qlc1kgj29qdfv8dpqn-pyproject-make-venv-hook.drv
+  /nix/store/fzpcjyvjir0xi9np1kw2hzswlxn2p903-numpy-1.22.0.drv
+  /nix/store/mplbgwsvsldkhrd4fjqc284792cr8czp-uv2nix-hammer-app-0.1.0.drv
+  /nix/store/nw3w7dvgsszh9kzkn8wbn09q5jh1352z-cloc-0.2.5.drv
+  /nix/store/pw41v93kv67nlp8p2izvg9s6f0a9iqbv-mysqlclient-2.0.3.drv
+  /nix/store/qkd280dc0p8ixjxzqgyy6cgj17x7s70v-test-venv.drv
+building '/nix/store/nw3w7dvgsszh9kzkn8wbn09q5jh1352z-cloc-0.2.5.drv'...
+building '/nix/store/pw41v93kv67nlp8p2izvg9s6f0a9iqbv-mysqlclient-2.0.3.drv'...
+building '/nix/store/fzpcjyvjir0xi9np1kw2hzswlxn2p903-numpy-1.22.0.drv'...
+building '/nix/store/033hiv7ixjw1xzp3z3acps1qn8g0qzpb-pandas-1.5.1.drv'...
+building '/nix/store/dc3jllv0g90iv3qlc1kgj29qdfv8dpqn-pyproject-make-venv-hook.drv'...
+building '/nix/store/mplbgwsvsldkhrd4fjqc284792cr8czp-uv2nix-hammer-app-0.1.0.drv'...
+error: builder for '/nix/store/nw3w7dvgsszh9kzkn8wbn09q5jh1352z-cloc-0.2.5.drv' failed with exit code 1;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       >
+       > ERROR Backend 'setuptools.build_meta:__legacy__' is not available.
+       For full logs, run 'nix log /nix/store/nw3w7dvgsszh9kzkn8wbn09q5jh1352z-cloc-0.2.5.drv'.
+error: builder for '/nix/store/pw41v93kv67nlp8p2izvg9s6f0a9iqbv-mysqlclient-2.0.3.drv' failed with exit code 1;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       >
+       > ERROR Backend 'setuptools.build_meta:__legacy__' is not available.
+       For full logs, run 'nix log /nix/store/pw41v93kv67nlp8p2izvg9s6f0a9iqbv-mysqlclient-2.0.3.drv'.
+error: builder for '/nix/store/033hiv7ixjw1xzp3z3acps1qn8g0qzpb-pandas-1.5.1.drv' failed with exit code 1;
+       last 10 log lines:
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+       >   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+       >   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+       >   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+       >   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+       > ModuleNotFoundError: No module named 'setuptools'
+       >
+       > ERROR Backend 'setuptools.build_meta:__legacy__' is not available.
+       For full logs, run 'nix log /nix/store/033hiv7ixjw1xzp3z3acps1qn8g0qzpb-pandas-1.5.1.drv'.
+error: builder for '/nix/store/fzpcjyvjir0xi9np1kw2hzswlxn2p903-numpy-1.22.0.drv' failed with exit code 1;
+       last 10 log lines:
+       >   File "<string>", line 85, in <module>
+       >   File "/build/numpy-1.22.0/numpy/distutils/core.py", line 24, in <module>
+       >     from numpy.distutils.command import config, config_compiler, \
+       >   File "/build/numpy-1.22.0/numpy/distutils/command/config.py", line 19, in <module>
+       >     from numpy.distutils.mingw32ccompiler import generate_manifest
+       >   File "/build/numpy-1.22.0/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+       >     from distutils.msvccompiler import get_build_version as get_build_msvc_version
+       > ModuleNotFoundError: No module named 'distutils.msvccompiler'
+       >
+       > ERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel
+       For full logs, run 'nix log /nix/store/fzpcjyvjir0xi9np1kw2hzswlxn2p903-numpy-1.22.0.drv'.
+error: 4 dependencies of derivation '/nix/store/qkd280dc0p8ixjxzqgyy6cgj17x7s70v-test-venv.drv' failed to build

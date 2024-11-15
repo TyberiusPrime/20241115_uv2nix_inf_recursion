@@ -1,0 +1,23 @@
+warning: Git tree '/project/builds/hammer_build_grimoire-elk_1.1.5/build' is dirty
+error:
+       … in the left operand of the update (//) operator
+
+         at /nix/store/8yklbvqh7wm07sczmfgkrw04ry3k9jm1-source/lib/customisation.nix:542:23:
+
+          541|   makeScope = newScope: f:
+          542|     let self = f self // {
+             |                       ^
+          543|           newScope = scope: newScope (self // scope);
+
+       … in the right operand of the update (//) operator
+
+         at /nix/store/8yklbvqh7wm07sczmfgkrw04ry3k9jm1-source/lib/fixed-points.nix:315:12:
+
+          314|       in
+          315|       prev // overlay final prev
+             |            ^
+          316|     );
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: Infinite recursion: Could not resolve dependencies. Conflicting groups?
